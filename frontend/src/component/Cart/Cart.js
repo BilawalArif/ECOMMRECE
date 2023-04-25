@@ -39,7 +39,7 @@ const Cart = () => {
   return (
     <Fragment>
       {cartItems.length === 0 ? (
-        <div className="emptyCart">
+        <div className="emptyCart"> 
           <MdRemoveShoppingCart />
 
           <Typography>No Product in Your Cart</Typography>

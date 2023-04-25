@@ -7,7 +7,7 @@ import { Doughnut, Line } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
 import { getAdminProduct } from "../../actions/productAction";
 import { getAllOrders } from "../../actions/orderAction.js";
-import { getAllUsers } from "../../actions/userAction.js";
+import { getAllUsers, loadUser } from "../../actions/userAction.js";
 
 import MetaData from "../layout/MetaData";
 
@@ -72,7 +72,7 @@ const Dashboard = () => {
         <div className="dashboardSummary">
           <div>
             <p>
-              Total Amount <br />  ₹{totalAmount}
+              Total Amount <br /> ₹{totalAmount}
             </p>
           </div>
           <div className="dashboardSummaryBox2">

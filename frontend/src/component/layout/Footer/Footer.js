@@ -2,7 +2,7 @@ import React from "react";
 import playStore from "../../../images/playstore.png";
 import appStore from "../../../images/Appstore.png";
 import "./Footer.css";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsYoutube, BsFacebook } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer id="footer">
@@ -17,14 +17,20 @@ const Footer = () => {
         <h1>ECOMMERCE.</h1>
         <p>High Quality is our first priority</p>
 
-        <p>Copyrights 2021 &copy; MeAbhiSingh</p>
+        <p>Copyrights 2021 &copy; bilawalarif003@gmail.com</p>
       </div>
 
       <div className="rightFooter">
         <h4>Follow Us</h4>
-        <a href="http://instagram.com/meabhisingh">Instagram <BsInstagram/></a>
-        <a href="http://youtube.com/6packprogramemr">Youtube</a>
-        <a href="http://instagram.com/meabhisingh">Facebook</a>
+        <a href="http://instagram.com/meabhisingh">
+          Instagram <BsInstagram />
+        </a>
+        <a href="http://youtube.com/6packprogramemr">
+          Youtube <BsYoutube />
+        </a>
+        <a href="http://instagram.com/meabhisingh">
+          Facebook <BsFacebook />
+        </a>
       </div>
     </footer>
   );

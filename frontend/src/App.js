@@ -96,7 +96,7 @@ function App() {
               element={
                 <Elements stripe={loadStripe(stripeApiKey)}>
                   <Payment />
-                </Elements>
+                </Elements> 
               }
             />
           )}

@@ -70,7 +70,9 @@ const LogiSignUp = () => {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
   };
-  const redirect = location.search ? location.search.slice[1].split("=")[1] : "/account";
+  const redirect = location.search ? location.search.split("=")[1] : "account";
+  const desiredUrl =  "/" + redirect; // "http://localhost:3000/shipping"
+
 
 
   useEffect(() => {
@@ -79,9 +81,9 @@ const LogiSignUp = () => {
       dispatch(clearErrors());
     }
     if ( isAuthenticated) {
-      navigate(redirect);
+      navigate(desiredUrl);
     } 
-  }, [dispatch, error, alert, navigate, isAuthenticated, redirect]);
+  }, [dispatch, error, alert, navigate, isAuthenticated, desiredUrl]);
 
   const switchTabs = (e, tab) => {
     if (tab === "login") {
