@@ -3,7 +3,6 @@ import "./Cart.css";
 import CartItemCard from "./CartItemCard.js";
 import { useSelector, useDispatch } from "react-redux";
 import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
-import { loadUser } from "../../actions/userAction";
 import { useNavigate, Link } from "react-router-dom";
 import { Typography } from "@mui/material";
 import { MdRemoveShoppingCart } from "react-icons/md";
@@ -33,8 +32,13 @@ const Cart = () => {
   };
 
   const checkoutHandler = () => {
-    navigate("/login?redirect=shipping");
-  };
+    if (!isAuthenticated) {
+
+      navigate("/login");
+    } else {
+      navigate("/shipping");
+
+    }  };
 
   return (
     <Fragment>

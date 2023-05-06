@@ -70,8 +70,8 @@ const LogiSignUp = () => {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
   };
-  const redirect = location.search ? location.search.split("=")[1] : "account";
-  const desiredUrl =  "/" + redirect; // "http://localhost:3000/shipping"
+  // const redirect = location.search ? location.search.split("=")[1] : "account";
+  // const desiredUrl =  "/" + redirect; // "http://localhost:3000/shipping"
 
 
 
@@ -80,10 +80,10 @@ const LogiSignUp = () => {
       alert.error(error);
       dispatch(clearErrors());
     }
-    if ( isAuthenticated) {
-      navigate(desiredUrl);
+    if (isAuthenticated) {
+      navigate('/account');
     } 
-  }, [dispatch, error, alert, navigate, isAuthenticated, desiredUrl]);
+  }, [dispatch, error, alert, navigate, isAuthenticated]);
 
   const switchTabs = (e, tab) => {
     if (tab === "login") {

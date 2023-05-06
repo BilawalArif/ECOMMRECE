@@ -8,13 +8,14 @@ import { useDispatch, useSelector } from "react-redux";
 import ProductCard from "./ProductCard.js";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
+import axios from "axios";
 
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
-  const { loading, error, products } = useSelector(
-    (state) => state.products
-  );
+  const { loading, error, products } = useSelector((state) => state.products);
+
+  
 
   useEffect(() => {
     if (error) {
@@ -49,7 +50,6 @@ const Home = () => {
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
-
         </Fragment>
       )}
     </Fragment>
