@@ -13,7 +13,6 @@ const LogiSignUp = () => {
   const dispatch = useDispatch();
   const alert = useAlert();
   const navigate = useNavigate();
-  const location = useLocation();
 
   const { error, loading, isAuthenticated } = useSelector(
     (state) => state.user

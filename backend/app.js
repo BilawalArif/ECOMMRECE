@@ -32,6 +32,14 @@ app.use("/api/v1", user);
 app.use("/api/v1", order);
 app.use("/api/v1", payment);
 
+
+// Add this middleware to set the correct host header
+app.use((req, res, next) => {
+  if (req.headers.host === 'https://ecommerve-bills.onrender.com') {
+    req.headers.host = 'ecommerve-bills.com';
+  }
+  next();
+});
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
