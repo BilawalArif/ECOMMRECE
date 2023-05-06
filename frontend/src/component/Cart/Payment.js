@@ -18,7 +18,6 @@ import CreditCardIcon from "@material-ui/icons/CreditCard";
 import EventIcon from "@material-ui/icons/Event"; 
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import { createOrder, clearErrors } from "../../actions/orderAction";
-import { BASE_URL } from "../../../src/const.js";
 
 
 
@@ -61,7 +60,7 @@ const Payment = () => {
         },
       };
       const { data } = await axios.post(
-        `${BASE_URL}/api/v1/payment/process`,
+        "/api/v1/payment/process",
         paymentData,
         config
       );
