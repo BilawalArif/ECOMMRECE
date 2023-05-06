@@ -1,9 +1,8 @@
 import React from "react";
 import "./About.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
-
 
 const About = () => {
   const visitInstagram = () => {
@@ -28,16 +27,13 @@ const About = () => {
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by Bilawal. Only with the
-              purpose to learn MERN Stack.
+              This is a sample wesbite made by Bilawal. Only with the purpose to
+              learn MERN Stack.
             </span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
-            <a
-              href="https://github.com/BilawalArif"
-              target="blank"
-            >
+            <a href="https://github.com/BilawalArif" target="blank">
               <GitHubIcon className="youtubeSvgIcon" />
             </a>
 
