@@ -1,11 +1,13 @@
 import React from "react";
 import "./About.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
-import YouTubeIcon from "@material-ui/icons/YouTube";
+import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from "@material-ui/icons/Instagram";
+
+
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/meabhisingh";
+    window.location = "https://instagram.com/bil__a__wal";
   };
   return (
     <div className="aboutSection">
@@ -21,22 +23,22 @@ const About = () => {
               src="https://res.cloudinary.com/doqnmq5wz/image/upload/v1681723022/avatars/btdiuyoxabfkbm7tq0hu.jpg"
               alt="Founder"
             />
-            <Typography>Abhishek Singh</Typography>
+            <Typography>Bilawal Arif</Typography>
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by @meabhisingh. Only with the
-              purpose to teach MERN Stack on the channel 6 Pack Programmer
+              This is a sample wesbite made by Bilawal. Only with the
+              purpose to learn MERN Stack.
             </span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
             <a
-              href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
+              href="https://github.com/BilawalArif"
               target="blank"
             >
-              <YouTubeIcon className="youtubeSvgIcon" />
+              <GitHubIcon className="youtubeSvgIcon" />
             </a>
 
             <a href="https://instagram.com/bil__a__wal" target="blank">
