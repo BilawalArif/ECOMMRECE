@@ -33,7 +33,7 @@ const options = {
   nav2Transition: "nav1Transition + 0.5",
   nav3Transition: "nav2Transition + 0.5",
   nav4Transition: "nav3Transition + 0.5",
-  link1AnimationTime: 1.5,
+  link1AnimationTime: 0.5,
   link2AnimationTime: link1AnimationTime,
   link3AnimationTime: link2AnimationTime,
   link4AnimationTime: link3AnimationTime,
@@ -57,9 +57,9 @@ const options = {
   searchIconTransition: 0.5,
   cartIconTransition: 0.5,
   profileIconTransition: 0.5,
-  searchIconAnimationTime: 2,
-  cartIconAnimationTime: searchIconAnimationTime + 0.5,
-  profileIconAnimationTime: cartIconAnimationTime + 0.5,
+  searchIconAnimationTime: 0.5,
+  cartIconAnimationTime: searchIconAnimationTime + 0.3,
+  profileIconAnimationTime: cartIconAnimationTime + 0.3,
 };
 
 const Header = () => {
