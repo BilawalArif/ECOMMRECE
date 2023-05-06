@@ -9,6 +9,8 @@ import { BsCart } from "react-icons/bs";
 const options = {
   burgerColorHover: "#eb4034",
   logo,
+  logoUrl: "/",
+  logoAnimationTime: 0.4,
   logoWidth: "20vmax",
   navColor1: "white",
   logoHoverSize: "10px",
@@ -27,6 +29,14 @@ const options = {
   nav2justifyContent: "flex-end",
   nav3justifyContent: "flex-start",
   nav4justifyContent: "flex-start",
+  nav1Transition: 0.5,
+  nav2Transition: "nav1Transition + 0.5",
+  nav3Transition: "nav2Transition + 0.5",
+  nav4Transition: "nav3Transition + 0.5",
+  link1AnimationTime: 1.5,
+  link2AnimationTime: link1AnimationTime,
+  link3AnimationTime: link2AnimationTime,
+  link4AnimationTime: link3AnimationTime,
   link1ColorHover: "#eb4034",
   link1Margin: "1vmax",
   profileIconUrl: "/login",
@@ -44,13 +54,18 @@ const options = {
   searchIconColorHover: "#eb4034",
   cartIconColorHover: "#eb4034",
   cartIconMargin: "1vmax",
+  searchIconTransition: 0.5,
+  cartIconTransition: 0.5,
+  profileIconTransition: 0.5,
+  searchIconAnimationTime: 2,
+  cartIconAnimationTime: searchIconAnimationTime + 0.5,
+  profileIconAnimationTime: cartIconAnimationTime + 0.5,
 };
 
 const Header = () => {
   return (
     <Fragment>
-      <ReactNavbar {...options}>
-      </ReactNavbar>
+      <ReactNavbar {...options}></ReactNavbar>
     </Fragment>
   );
 };
