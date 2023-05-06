@@ -30,7 +30,7 @@ import {
   DELETE_REVIEW_FAIL,
   DELETE_REVIEW_RESET,
 } from "../constants/productConstants";
-import { BASE_URL } from "../src/const";
+import { BASE_URL } from "../../src/const.js";
 
 // Get All Products
 export const getProduct =
