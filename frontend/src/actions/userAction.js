@@ -39,6 +39,7 @@ import {
   CLEAR_ERRORS,
 } from "../constants/userConstants";
 import axios from "axios";
+import { BASE_URL } from "../src/const";
 
 //Login
 export const login = (email, password) => async (dispatch) => {
